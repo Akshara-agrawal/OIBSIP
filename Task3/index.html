@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter - Fahrenheit, Celsius, Kelvin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img_src/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <p class="time" id="CurrentTime"></p>
+        <p class="day" id="getday"></p>
+        <p class="battery" id="batterystatus"></p>
+        <h1>Temperature Converter</h1>
+        
+        <div class="form">
+            <div class="input">
+                <h3>Degrees</h3>
+                <input type="text" id="degree" name="temperature" placeholder="Enter Temperature" required autocomplete="off" autofocus>
+            </div>
+            <div class="type">
+                <h3>Type</h3>
+                <select id="type">
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="celsius">Celsius</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+            </div>
+            
+            <div class="result">
+                <h3>Result</h3>
+                <input type="text" id="result" readonly placeholder="Converted Temperature">
+            </div>
+        </div>
+        <div class="buttons">
+            <button type="submit" onclick="tempconverter()">Convert</button>
+            <button type="submit" onclick="resetvalue()">Reset</button>
+        </div>
+
+    </div>
+    <script src="script.js" defer></script>
+
+</body>
+
+</html>
